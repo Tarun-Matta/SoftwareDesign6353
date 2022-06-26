@@ -2,6 +2,7 @@
 <div class="card-body">
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
         <div class="form-group">
+          <!--- Username part here --->
             <label>Username</label>
             <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
             <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
@@ -9,6 +10,7 @@
             </div>
         </div>
         <div class="form-group">
+          <!--- Password part here --->
             <label>Password</label>
             <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
             <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
